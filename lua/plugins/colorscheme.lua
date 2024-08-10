@@ -1,13 +1,11 @@
 return {
   {
-    "ellisonleao/gruvbox.nvim",
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
     config = function()
-      vim.o.background = "light"
-      vim.cmd([[colorscheme gruvbox]])
-
-      -- Optional: Additional Gruvbox settings
-      vim.g.gruvbox_contrast_light = "soft" -- or 'medium' or 'hard'
-      vim.g.gruvbox_invert_selection = "0"
+      vim.cmd.colorscheme("catppuccin-mocha")
     end,
   },
 }
